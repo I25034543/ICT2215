@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTI Coffee Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="top">
+        <h1>INTI Coffee Bar</h1>
+        
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>INTI Coffee Bar is a small café concept at INTI International University. Start your day with a warm cappuccino, pick up an iced latte between classes, or enjoy a croissant with a friend. Our menu brings together familiar coffee favourites and a few sweet treats.</p>
+            <p>Come in for a quick breakfast or take a seat for an afternoon break. A cup of coffee, a small snack, and a comfortable corner are all you need to enjoy a slower moment in a busy day.</p>
+            <img class="photo" src="images/coffee.jpg" alt="A cup of cappuccino">
+            <img class="photo" src="images/breakfast.jpg" alt="A croissant and coffee served on white linen" loading="lazy">
+            <img class="photo" src="images/interior.jpg" alt="Sunlit coffee shop seating with wooden furniture" loading="lazy">
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We want INTI Coffee Bar to feel like an easy place to visit every day. Students can read before their next class, friends can catch up over a drink, and university staff can stop by for their morning coffee. Take your time choosing a drink and make yourself comfortable.</p>
+            <p>Our coffee menu starts with espresso. Choose an Americano for a stronger coffee taste, a latte for a creamy drink, or a cappuccino for a layer of soft milk foam. Add a pastry or brownie when you feel like something sweet.</p>
+            <img class="photo" src="images/cafe.jpg" alt="Coffee and snacks beside a café window" loading="lazy">
+            <img class="photo" src="images/beans.jpg" alt="Roasted coffee beans in a coffee roaster" loading="lazy">
+            <img class="photo" src="images/tables.jpg" alt="Wooden café tables and chairs under warm lights" loading="lazy">
+            <ul class="features">
+                <li><img src="images/cup.svg" alt=""> Coffee &amp; light bites</li>
+                <li><img src="images/heart.svg" alt=""> A place to meet</li>
+                <li><img src="images/sun.svg" alt=""> Open daily, 8 am–6 pm</li>
+            </ul>
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <p>Choose a coffee for your morning routine or a small treat for your afternoon break. Prices below are in Malaysian Ringgit.</p>
+            <h3>Coffee &amp; Drinks</h3>
+            <ul>
+                <li><strong>Americano — RM 8</strong><br>Espresso with hot water. A straightforward choice for a rich coffee taste.</li>
+                <li><strong>Café Latte — RM 11</strong><br>Espresso with steamed milk. Creamy and mild, with a thin layer of foam.</li>
+                <li><strong>Cappuccino — RM 11</strong><br>Espresso, warm milk, and soft milk foam. A comforting morning favourite.</li>
+                <li><strong>Iced Latte — RM 12</strong><br>Espresso poured over cold milk and ice. Refreshing on a warm afternoon.</li>
+            </ul>
+            <h3>Something Sweet</h3>
+            <ul>
+                <li><strong>Butter Croissant — RM 7</strong><br>A flaky pastry with a buttery centre. Enjoy it with an Americano or latte.</li>
+                <li><strong>Chocolate Brownie — RM 9</strong><br>A rich chocolate bite with a soft centre. A sweet finish to your coffee break.</li>
+            </ul>
+            <img class="photo" src="images/latte.jpg" alt="Milk being poured into a cup of coffee" loading="lazy">
+            <img class="photo" src="images/iced-coffee.jpg" alt="An iced coffee served in a glass" loading="lazy">
+            <img class="photo" src="images/brownie.jpg" alt="Chocolate brownies served on a plate" loading="lazy">
+            <p><strong>Try a pairing</strong> — Americano and a croissant for RM 15, or a café latte and a brownie for RM 20.</p>
+
+            <h3>Coffee Video</h3>
+            <p>Take a short coffee break with this film of coffee being poured outdoors. Press play and enjoy the moment.</p>
+            <video controls preload="metadata" poster="images/video-poster.jpg" aria-label="Coffee being poured outdoors">
+                <source src="media/coffee.mp4" type="video/mp4">
+                <a href="media/coffee.mp4">Open the coffee video</a>
+            </video>
+            <p><small>Video by Taryn Elliott / Pexels.</small></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Location: INTI International University<br>
+               Opening hours: Daily, 8 am to 6 pm</p>
+            <p>Have a question about a drink, a pastry, or a visit with friends? Add your name, email, and message below. Tell us what you would like to try or when you plan to drop by.</p>
+          
+            <form action="#form-result" method="get">
+                <label for="name">Name</label>
+                <input id="name" type="text" autocomplete="name" required>
+                <label for="email">Email</label>
+                <input id="email" type="email" autocomplete="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p id="form-result" tabindex="-1">Demo submission complete. This form does not send messages.</p>
+        </section>
+    </main>
+
+    <footer> 
+        <a href="#top">Back to top</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* 基础字体和页面颜色 */
+body {
+    margin: 0;
+    background: #faf6ef;
+    color: #302820;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header, footer {
+    background: #5a3928;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+}
+
+header a, footer a {
+    color: white;
+}
+
+nav a {
+    display: inline-block;
+    margin: 4px 7px;
+}
+
+/* 限制正文宽度，窄屏时随屏幕缩小 */
+main {
+    max-width: 700px;
+    margin: auto;
+    padding: 0 16px;
+}
+
+section {
+    padding: 12px 0;
+    border-bottom: 1px solid #d2c3b7;
+}
+
+h2 {
+    margin: 0;
+    color: #5a3928;
+    font-size: 22px;
+}
+
+p {
+    margin: 8px 0 12px;
+}
+
+/* 图片和视频的宽度不会超出正文 */
+.photo, video {
+    max-width: 100%;
+}
+
+.photo {
+    display: inline-block;
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 6px 8px 0;
+    vertical-align: top;
+}
+
+video {
+    display: block;
+    width: 480px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.features {
+    list-style: none;
+    padding-left: 0;
+}
+
+.features li {
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.features img {
+    width: 22px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* 表单的标签与输入框依次往下排 */
+form {
+    max-width: 420px;
+}
+
+label, input, textarea {
+    display: block;
+}
+
+input, textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 4px 0 12px;
+    padding: 7px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 5px 12px;
+}
+
+/* 提交后跳到提示，:target 让这段文字显示出来 */
+#form-result {
+    display: none;
+}
+
+#form-result:target {
+    display: block;
+}
+
+footer p {
+    margin: 0 0 6px;
+}
